@@ -3,7 +3,7 @@ function Header() {
     <>
       <header>
         <h1>Jimmy Dao</h1>
-        <h2>Software Developer Student</h2>
+        <h4>Software Developer Student</h4>
       </header>
     </>
   );

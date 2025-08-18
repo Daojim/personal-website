@@ -21,7 +21,13 @@
 /* minimal application so you actually see it */
 html,
 body {
-  /* margin: 0; */
+  margin: 0;
   background: var(--bg);
   color: var(--text);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
