@@ -1,0 +1,27 @@
+:root {
+  /* canvas + surfaces */
+  --bg: #fdf0d5; /* warm cream */
+  --surface: #fff8eb; /* soft ivory surface */
+  --border: #e8dac2; /* hairline borders */
+
+  /* text */
+  --text: #003049; /* navy body text */
+  --muted: #669bbc; /* steel-blue secondary */
+
+  /* links */
+  --link: #003049; /* navy link */
+  --link-underline: #669bbc; /* subtle underline/hover tint */
+
+  /* brand accent */
+  --accent: #c1121f; /* primary red for CTAs/active nav */
+  --accent-deep: #780000; /* pressed/hover variant */
+  --accent-contrast: #ffffff; /* text on accent */
+}
+
+/* minimal application so you actually see it */
+html,
+body {
+  /* margin: 0; */
+  background: var(--bg);
+  color: var(--text);
+}
