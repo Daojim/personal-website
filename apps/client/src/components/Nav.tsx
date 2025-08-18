@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Nav() {
   return (
@@ -10,12 +11,22 @@ function Nav() {
             <NavLink to="/about">About</NavLink>
           </div>
           <div className="externalNav">
-            <NavLink to="https://github.com/daojim" target="_blank">
-              GitHub
-            </NavLink>
-            <NavLink to="https://www.linkedin.com/in/daojim/" target="_blank">
-              LinkedIn
-            </NavLink>
+            <a
+              href="https://github.com/daojim"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Jimmy’s GitHub"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/daojim/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Jimmy’s LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
           </div>
         </div>
       </nav>

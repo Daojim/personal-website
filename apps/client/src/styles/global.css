@@ -81,20 +81,37 @@ nav .container .externalNav {
   justify-content: right;
 }
 
-nav a {
+nav .internalNav a {
   text-decoration: none;
   color: var(--link);
   padding: 4px 0;
   border-bottom: 2px solid transparent; /* reserve space so layout doesn’t jump */
 }
-nav a:hover {
+nav .internalNav a:hover {
   border-bottom-color: var(--link-underline);
 }
 
 /* Active page: red underline + color */
-nav a[aria-current="page"] {
+nav .internalNav a[aria-current="page"] {
   color: var(--accent);
   border-bottom-color: var(--accent);
+}
+
+nav .externalNav a {
+  font-size: 1.25rem; /* bump icon size (≈20px) */
+  color: var(--link); /* starts navy */
+  border-bottom: 0; /* no underline */
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .externalNav a:hover {
+  color: var(--accent);
+} /* red on hover */
+nav .externalNav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 #main {
