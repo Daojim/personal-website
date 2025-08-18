@@ -33,22 +33,77 @@ body {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
-header,
+@media (min-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 nav,
-footer {
+#main {
   background: var(--surface);
 }
 
 header {
   border-bottom: 1px solid var(--border);
+  padding: 16px 0;
 }
 
 nav {
   border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container .internalNav {
+  display: flex;
+  gap: 26px;
+}
+
+nav .container .externalNav {
+  display: flex;
+  gap: 16px;
+  justify-content: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--link);
+  padding: 4px 0;
+  border-bottom: 2px solid transparent; /* reserve space so layout doesn’t jump */
+}
+nav a:hover {
+  border-bottom-color: var(--link-underline);
+}
+
+/* Active page: red underline + color */
+nav a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+#main {
+  padding-top: 12px;
+  padding-bottom: 16px;
 }
 
 footer {
   border-top: 1px solid var(--border);
+  padding: 16px 0;
+  color: var(--muted);
 }
