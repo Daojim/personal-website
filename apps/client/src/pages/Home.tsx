@@ -14,7 +14,7 @@ function Home() {
         learning, video games I'm playing or have played, and my personal life.
       </p>
       <p>
-        I will be posting more at <Link to={{ pathname: "/blog" }}>/blog</Link>
+        I will be posting more at <Link to="/blog">/blog</Link>
       </p>
     </>
   );
