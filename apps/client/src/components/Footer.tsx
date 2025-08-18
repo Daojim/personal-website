@@ -1,5 +1,11 @@
 function Footer() {
-  return <footer>&copy; 2025 Jimmy Dao. All rights reserved.</footer>;
+  return (
+    <footer>
+      <div className="container">
+        &copy; 2025 Jimmy Dao. All rights reserved.
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

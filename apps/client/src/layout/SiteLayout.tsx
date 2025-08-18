@@ -6,20 +6,16 @@ import Footer from "../components/Footer";
 function SiteLayout() {
   return (
     <>
-      <div className="container">
-        <Header />
-      </div>
-      <div className="container">
-        <Nav />
-      </div>
-      <div className="container">
-        <main>
+      <Header />
+      <Nav />
+
+      <main id="main">
+        <div className="container">
           <Outlet />
-        </main>
-      </div>
-      <div className="container">
-        <Footer />
-      </div>
+        </div>
+      </main>
+
+      <Footer />
     </>
   );
 }

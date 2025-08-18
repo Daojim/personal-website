@@ -27,7 +27,28 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+nav,
+footer {
+  background: var(--surface);
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  border-bottom: 1px solid var(--border);
+}
+
+footer {
+  border-top: 1px solid var(--border);
 }
