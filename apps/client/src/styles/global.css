@@ -16,6 +16,15 @@
   --accent: #c1121f; /* primary red for CTAs/active nav */
   --accent-deep: #780000; /* pressed/hover variant */
   --accent-contrast: #ffffff; /* text on accent */
+
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
 
 /* minimal application so you actually see it */
@@ -49,14 +58,24 @@ body {
     padding-right: 32px;
   }
 }
-/* nav,
-#main {
-  background: var(--surface);
-} */
 
 header {
   border-bottom: 1px solid var(--border);
-  padding: 16px 0;
+  /* padding: 16px 0; */
+}
+
+header h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 70px;
+}
+
+header h4 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
 }
 
 nav {
@@ -128,6 +147,7 @@ nav .externalNav a:focus-visible {
 #main .container {
   background: var(--surface);
   padding: 24px;
+  border-radius: 25px;
 }
 
 footer {
