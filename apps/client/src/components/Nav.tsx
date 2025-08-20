@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FaNewspaper } from "react-icons/fa6";
+import { CgProfile } from "react-icons/cg";
 
 function Nav() {
   return (
@@ -7,8 +10,15 @@ function Nav() {
       <nav>
         <div className="container">
           <div className="internalNav">
-            <NavLink to="/">Home</NavLink> <NavLink to="/blog">Blog</NavLink>{" "}
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/">
+              <FaHome /> Home
+            </NavLink>{" "}
+            <NavLink to="/blog">
+              <FaNewspaper /> Blog
+            </NavLink>{" "}
+            <NavLink to="/about">
+              <CgProfile /> About
+            </NavLink>
           </div>
           <div className="externalNav">
             <a
