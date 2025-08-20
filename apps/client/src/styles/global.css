@@ -49,10 +49,10 @@ body {
     padding-right: 32px;
   }
 }
-nav,
+/* nav,
 #main {
   background: var(--surface);
-}
+} */
 
 header {
   border-bottom: 1px solid var(--border);
@@ -68,17 +68,22 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--surface);
+  padding: 12px;
+  border-radius: 25px;
 }
 
 nav .container .internalNav {
   display: flex;
   gap: 26px;
+  padding-left: 10px;
 }
 
 nav .container .externalNav {
   display: flex;
   gap: 16px;
   justify-content: right;
+  padding-right: 10px;
 }
 
 nav .internalNav a {
@@ -88,6 +93,7 @@ nav .internalNav a {
   border-bottom: 2px solid transparent; /* reserve space so layout doesn’t jump */
 }
 nav .internalNav a:hover {
+  color: var(--link-underline);
   border-bottom-color: var(--link-underline);
 }
 
@@ -117,6 +123,11 @@ nav .externalNav a:focus-visible {
 #main {
   padding-top: 12px;
   padding-bottom: 16px;
+}
+
+#main .container {
+  background: var(--surface);
+  padding: 24px;
 }
 
 footer {
