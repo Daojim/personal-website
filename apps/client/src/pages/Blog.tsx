@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { posts } from "../content/posts";
 
 function Blog() {
@@ -8,7 +9,9 @@ function Blog() {
         <div className="blog-posts">
           {posts.map((post) => (
             <article key={post.slug}>
-              <h3>{post.title}</h3>
+              <Link to={`/blog/${post.slug}`}>
+                <h3>{post.title}</h3>
+              </Link>
               <time dateTime={post.date}>
                 {new Date(post.date).toLocaleDateString()}
               </time>
